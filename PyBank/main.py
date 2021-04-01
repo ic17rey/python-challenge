@@ -36,6 +36,8 @@ with open(csv_path) as filehandler:
     print("Total months: " + str(months))
     print("Total Profit/Losses: $" + str(profits))
     
+
+# seems like for calcs on first and last rows of profits need list of items instead
 with open(csv_path) as filehandler:
   
     csv_reader = csv.reader(filehandler, delimiter=',')
@@ -45,8 +47,35 @@ with open(csv_path) as filehandler:
     
     # create a list from the csv file to analyze the profits/losses
     profits_list = []
-       
+    # set counter to 0, to be able to sum up the profits
+    total = 0   
+   
     for row in csv_reader:
-        print(row[1])
-        profits_list.append(row[1])       
+        # print(row[1])
+        profits_list.append(row[1])
+        
+        # find the sum of all the profits/loop through rows adding to total 
+        total += int(row[1])
+
+        start_value = profits_list[0]
+
+        final_value = profits_list[-1]
+
+    # use len to get number of months (row 2 of csv to end), and display result
+    print("Total months: " + str(len(profits_list)))
+    
+    # add total profits to what will be printed 
+    # print(total)
+    print("Total Profit/Losses: $" + str(total))
+
+    #print(start_value)
+
+    #print(final_value)
+    value_change = int(final_value) - int(start_value)
+    # average of the changes will be average_change divided by the number of changes that occurred
+    # number of changes occuring is months - 1
+    average_change = (value_change / (months - 1))
+    print(average_change)
+    
+    
         
