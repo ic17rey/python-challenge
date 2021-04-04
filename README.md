@@ -15,12 +15,7 @@ PyBank and PyPoll folders each include:
 ## PyBank
 
 From financial data in budget_data.csv, the script used for the analysis includes total amount of "Profit/Losses" over the timeframe, and the average "Profit/Loss" per month. 
-
-Also to include:
-  
-  * The greatest increase in profits (date and amount) over the entire period
-
-  * The greatest decrease in losses (date and amount) over the entire period
+Also included are the greatest increase in profits (date and amount) over the entire period and the greatest decrease in losses (date and amount) over the entire period.
 
 Final script prints analysis in the terminal and also exports the analysis to a text file in the "Analysis" folder.
 
