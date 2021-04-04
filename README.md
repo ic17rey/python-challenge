@@ -3,8 +3,11 @@
 The challenge involves work from two different data sources and the folders will be called PyBank and PyPoll.
 
 PyBank and PyPoll folders each include:
+  
   A main script to run for each analysis called main.py.
+  
   A "Resources" folder with the source csv file provided for the challenge.
+  
   An "Analysis" folder each with the text results from running the main script for that challenge.
   
   *The correct path to the csv file in Resources is included in the main script for each challenge.
@@ -14,6 +17,7 @@ PyBank and PyPoll folders each include:
 From financial data in budget_data.csv, the script used for the analysis includes total amount of "Profit/Losses" over the timeframe, and the average "Profit/Loss" per month. 
 
 Also to include:
+  
   * The greatest increase in profits (date and amount) over the entire period
 
   * The greatest decrease in losses (date and amount) over the entire period
