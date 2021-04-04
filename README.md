@@ -23,7 +23,6 @@ Final script prints analysis in the terminal and also exports the analysis to a 
 ## PyPoll
 
 From voting data in election)data.csv, the script used for analyis includes total number of votes cast.  
-![Vote Counting](Images/Vote_counting.png)
 
 Also to include:
 
