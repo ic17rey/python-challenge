@@ -1,11 +1,11 @@
 #==================
-# PyPoll Challenge - create analysis of election data that exports to a csv file
+# PyPoll Challenge - create analysis of election data that exports to csv file
 #==================
     
-    # csv file output and analysis printed to terminal to include:
-    # total number of votes cast and list of candidates who received votes
-    # percentage of votes and number of votes each candidate won 
-    # winner of election from the popular vote
+# csv file output and analysis printed to terminal to include:
+# total number of votes cast and list of candidates who received votes
+# percentage of votes and number of votes each candidate won 
+# winner of election from the popular vote
    
 # begin with import of os and csv modules
 import os
@@ -16,7 +16,7 @@ csv_path = os.path.join('.', 'Resources', 'election_data.csv')
 
 # use the csv module to read the file
 with open(csv_path) as file_handler:
-
+    
     csv_reader = csv.reader(file_handler, delimiter=',')
 
     # move to the row beneath the header to begin analysis of data
@@ -29,25 +29,36 @@ with open(csv_path) as file_handler:
         
         votes_list.append(row[0])
         
-    print("Total Votes: " + str(len(votes_list)))
+    output = f'Election Results\n-----------------\n'
+    output += f"Total Votes: {(len(votes_list))}\n"
+
+print(output)
+
+# write output lines to csv in Analysis folder
+output_path = os.path.join(".", "Analysis", "analysis.csv")
+
+with open(output_path, 'w', newline='') as data_file:
+
+    data_file.write(output)
 
 # use the csv module to read the file
 # start a dictionary for votes_list
-votes_cast={}
 
-with open(csv_path) as file_handler:
+# votes_cast={}
 
-    csv_reader = csv.reader(file_handler, delimiter=',')
+# with open(csv_path) as file_handler:
 
-    # move to the row beneath the header to begin analysis of data
-    csv_header = next(csv_reader)
+#     csv_reader = csv.reader(file_handler, delimiter=',')
 
-    for row in csv_reader:
-        if row[2] not in votes_cast
-            votes_cast[row[2]] = 0
-        votes_cast[row[2]] += 1
+#     # move to the row beneath the header to begin analysis of data
+#     csv_header = next(csv_reader)
 
-print(vote_cast)
+#     for row in csv_reader:
+#         if row[2] not in votes_cast
+#             votes_cast[row[2]] = 0
+#         votes_cast[row[2]] += 1
+
+# print(vote_cast)
 
 
 
