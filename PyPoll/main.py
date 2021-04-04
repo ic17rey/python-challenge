@@ -35,7 +35,7 @@ with open(csv_path) as file_handler:
 print(output)
 
 # write output lines to csv in Analysis folder
-output_path = os.path.join(".", "Analysis", "analysis.csv")
+output_path = os.path.join("Analysis", "analysis.csv")
 
 with open(output_path, 'w', newline='') as data_file:
 
