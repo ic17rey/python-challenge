@@ -10,7 +10,7 @@ PyBank and PyPoll folders each include:
   
   An "Analysis" folder each with the text results from running the main script for that challenge.
   
-  *The correct path to the csv file in Resources is included in the main script for each challenge.
+  *The correct path to the csv file in Resources is included in the main script for each challenge.*
   
 ## PyBank
 
