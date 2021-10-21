@@ -21,9 +21,9 @@ Final script prints analysis in the terminal and also exports the analysis to a 
 
 ## PyPoll
 
-From voting data in election)data.csv, the script used for analyis includes total number of votes cast.  
+From voting data in election_data.csv, the script used for analyis includes total number of votes cast.  
 
-Also to include:
+The remaining code is incomplete and will be improved at a later time. Also to be included:
 
   * A complete list of candidates who received votes
 
